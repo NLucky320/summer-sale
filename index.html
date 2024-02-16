@@ -7,11 +7,20 @@
     <title>Summer Sale</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="Images/Summer 1.png" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-work {
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-work">
     <header>
         <section class="w-full mx-auto bg-[#F9F6E2] p-14">
             <div class="md:flex items-center justify-center text-center">
@@ -217,7 +226,9 @@
                             </div>
                         </div>
                         <div class="my-8 p-4 bg-white rounded-md">
-                            <div id="title-container"></div>
+                            <div class="font-medium text-xl">
+                                <div id="title-container"></div>
+                            </div>
                             <hr class="my-4" />
                             <p class="text-xl font-bold py-2">
                                 Total Price: $<span id="totalPrice"></span>
@@ -240,7 +251,7 @@
         </section>
     </main>
 
-    <script src="./index.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
